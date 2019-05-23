@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>性能优化 | Hi,mumu</title>
+    <meta name="description" content="my Love">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.533812eb.css" as="style"><link rel="preload" href="/assets/js/app.a2834c08.js" as="script"><link rel="preload" href="/assets/js/27.5311b73d.js" as="script"><link rel="prefetch" href="/assets/js/14.9e7c046f.js"><link rel="prefetch" href="/assets/js/1.2b932a6c.js"><link rel="prefetch" href="/assets/js/3.0d3babc2.js"><link rel="prefetch" href="/assets/js/4.c69c97cb.js"><link rel="prefetch" href="/assets/js/5.d43db7a4.js"><link rel="prefetch" href="/assets/js/6.7bbd4c35.js"><link rel="prefetch" href="/assets/js/7.f6dc0646.js"><link rel="prefetch" href="/assets/js/8.81b98fb5.js"><link rel="prefetch" href="/assets/js/9.1bb31920.js"><link rel="prefetch" href="/assets/js/10.afa4bcf4.js"><link rel="prefetch" href="/assets/js/11.a63b2342.js"><link rel="prefetch" href="/assets/js/12.7c557c1a.js"><link rel="prefetch" href="/assets/js/13.523bdccd.js"><link rel="prefetch" href="/assets/js/15.b1825688.js"><link rel="prefetch" href="/assets/js/16.f42e1f6e.js"><link rel="prefetch" href="/assets/js/17.8c271081.js"><link rel="prefetch" href="/assets/js/18.5fa22a10.js"><link rel="prefetch" href="/assets/js/19.d0bdf611.js"><link rel="prefetch" href="/assets/js/20.e32c2f83.js"><link rel="prefetch" href="/assets/js/21.f21b72fd.js"><link rel="prefetch" href="/assets/js/22.cb386c87.js"><link rel="prefetch" href="/assets/js/23.4cad49ef.js"><link rel="prefetch" href="/assets/js/24.f87a9197.js"><link rel="prefetch" href="/assets/js/25.1a8e0ecf.js"><link rel="prefetch" href="/assets/js/26.bf4d6bae.js"><link rel="prefetch" href="/assets/js/28.7a616c4d.js"><link rel="prefetch" href="/assets/js/29.855a6910.js"><link rel="prefetch" href="/assets/js/30.c0161284.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.533812eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hi,mumu</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link router-link-active">vue</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">javascript</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">css</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">tools</a></li><li class="dropdown-item"><!----> <a href="/mac/" class="nav-link">mac</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">java</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link router-link-active">vue</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">javascript</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">css</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">tools</a></li><li class="dropdown-item"><!----> <a href="/mac/" class="nav-link">mac</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">java</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>address</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/address.html" class="sidebar-link">element-cascader</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>gitHooks</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/gitHooks.html" class="sidebar-link">git hooks</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>css相关</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/css相关.html" class="sidebar-link">CSS相关</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>postcss</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/postcss.html" class="sidebar-link">Postcss</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="性能优化"><a href="#性能优化" aria-hidden="true" class="header-anchor">#</a> 性能优化</h2> <h2 id="prefetch"><a href="#prefetch" aria-hidden="true" class="header-anchor">#</a> prefetch</h2> <p>动态导入组件会自动使用<a href="https://www.cnblogs.com/xiaohuochai/p/9183874.html" target="_blank" rel="noopener noreferrer">prefetch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-js line-numbers-mode"><div class="highlight-lines"><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token punctuation">{</span>
+  path<span class="token punctuation">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+  name<span class="token punctuation">:</span> <span class="token string">'about'</span><span class="token punctuation">,</span>
+  component<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./views/About.vue'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>若要关闭或者修改，需手动配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// vue.config.js
+module.exports = {
+  chainWebpack: config =&gt; {
+    // 移除 prefetch 插件
+    config.plugins.delete('prefetch')
+
+    // 或者
+    // 修改它的选项：
+    config.plugin('prefetch').tap(options =&gt; {
+      options[0].fileBlacklist = options[0].fileBlacklist || []
+      options[0].fileBlacklist.push(/myasyncRoute(.)+?\.js$/)
+      return options
+    })
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><a href="https://cli.vuejs.org/zh/guide/html-and-static-assets.html#prefetch" target="_blank" rel="noopener noreferrer">vue<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="路由懒加载"><a href="#路由懒加载" aria-hidden="true" class="header-anchor">#</a> 路由懒加载</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  path: '/about',
+  name: 'about',
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  component: () =&gt; import(/* webpackChunkName: &quot;about&quot; */ './views/About.vue')
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="静态资源"><a href="#静态资源" aria-hidden="true" class="header-anchor">#</a> 静态资源</h2> <ol><li>url 以'.'开头会被根据文件的相对路径解析</li> <li>url 以'~'开头会被当作模块解析</li> <li>url 以'/'不会转换，直接引用public的资源，public里面的文件会被直接复制，不经过webpack编译
+<a href="https://cli.vuejs.org/zh/guide/html-and-static-assets.html#%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90" target="_blank" rel="noopener noreferrer">public<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <h2 id="全局样式"><a href="#全局样式" aria-hidden="true" class="header-anchor">#</a> 全局样式</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// vue.config.js
+module.exports = {
+  css: {
+    loaderOptions: {
+      // 给 sass-loader 传递选项
+      sass: {
+        // @/ 是 src/ 的别名
+        // 所以这里假设你有 `src/variables.scss` 这个文件
+        data: `@import &quot;~@/variables.scss&quot;;`
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="环境变量"><a href="#环境变量" aria-hidden="true" class="header-anchor">#</a> 环境变量</h2> <p>不需要提交的话， 修改本地文件.env.local.[test]</p> <ol><li>添加.env[test]文件</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>VUE_APP_CURRENTMODE='test'(一定要VUE_APP_开头)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>设置模式 --mode test</li></ol> <h2 id="eslint文件忽略"><a href="#eslint文件忽略" aria-hidden="true" class="header-anchor">#</a> eslint文件忽略</h2> <p><a href="https://juejin.im/post/5b8cf80251882542eb2df659" target="_blank" rel="noopener noreferrer">eslint<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="tslint"><a href="#tslint" aria-hidden="true" class="header-anchor">#</a> tslint</h2> <h3 id="tslint检验"><a href="#tslint检验" aria-hidden="true" class="header-anchor">#</a> tslint检验</h3> <p><a href="https://palantir.github.io/tslint/" target="_blank" rel="noopener noreferrer">tslint官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+工作区的settings配置文件(configFile一定要写成绝对路径)</p> <div class="language-js line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;tslint.configFile&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/Users/nick/Documents/study/vue/ts/tslint.json&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;tslint.jsEnable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;tslint.suppressWhileTypeErrorsPresent&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;tslint.autoFixOnSave&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;editor.codeActionsOnSave&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;soucrce.fixAll.tslint&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>tsconfig.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;esnext&quot;,
+    &quot;module&quot;: &quot;esnext&quot;,
+    &quot;strict&quot;: true,
+    &quot;jsx&quot;: &quot;preserve&quot;,
+    &quot;importHelpers&quot;: true,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;esModuleInterop&quot;: true,
+    &quot;allowSyntheticDefaultImports&quot;: true,
+    &quot;sourceMap&quot;: true,
+    &quot;baseUrl&quot;: &quot;.&quot;,
+    &quot;types&quot;: [
+      &quot;webpack-env&quot;
+    ],
+    &quot;paths&quot;: {
+      &quot;@/*&quot;: [
+        &quot;src/*&quot;
+      ]
+    },
+    &quot;lib&quot;: [
+      &quot;esnext&quot;,
+      &quot;dom&quot;,
+      &quot;dom.iterable&quot;,
+      &quot;scripthost&quot;
+    ]
+  },
+  &quot;include&quot;: [
+    &quot;src/**/*&quot;,
+  ],
+  &quot;exclude&quot;: [
+    &quot;node_modules&quot;
+  ]
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>tslint.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;defaultSeverity&quot;: &quot;warning&quot;,
+  &quot;extends&quot;: [
+    &quot;tslint:recommended&quot;
+  ],
+  &quot;globals&quot;: {
+    &quot;require&quot;: true
+  },
+  &quot;linterOptions&quot;: {
+    &quot;exclude&quot;: [
+      &quot;node_modules/**&quot;
+    ]
+  },
+  &quot;rules&quot;: {
+    &quot;quotemark&quot;: [true, &quot;single&quot;],
+    &quot;indent&quot;: [true, &quot;spaces&quot;, 2],
+    &quot;interface-name&quot;: false,
+    &quot;ordered-imports&quot;: false,
+    &quot;object-literal-sort-keys&quot;: false,
+    &quot;no-consecutive-blank-lines&quot;: false
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="tslint简单用法"><a href="#tslint简单用法" aria-hidden="true" class="header-anchor">#</a> tslint简单用法</h3> <p>vue装饰器<a href="https://www.npmjs.com/package/vue-property-decorator" target="_blank" rel="noopener noreferrer">vue-property-decorator<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script lang='ts'&gt;
+import { Vue, Component, Prop } from 'vue-property-decorator';
+enum Color { Red = 1, Green = 10, Blue }
+
+@Component
+export default class About extends Vue {
+  @Prop(Number) public readonly propA!: number;
+
+  public list: number[] = [1, 1];
+  public color: Color = Color.Blue;
+
+  private mounted() {
+    console.log(this.color);
+  }
+
+  private goPublic() {
+    console.log(this.list);
+  }
+}
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/27.5311b73d.js" defer></script><script src="/assets/js/app.a2834c08.js" defer></script>
+  </body>
+</html>
